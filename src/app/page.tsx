@@ -28,7 +28,9 @@ const InnerObjectsContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  position: relative;
+  position: absolute;
+
+  margin-left: -56px;
 `;
 
 const StyledMain = styled.main`
@@ -36,14 +38,6 @@ const StyledMain = styled.main`
 
   margin: 0;
   padding: 0;
-
-  background: rgb(219, 217, 252);
-  background: linear-gradient(
-    36deg,
-    rgba(219, 217, 252, 1) 0%,
-    rgba(255, 218, 255, 1) 26%,
-    rgba(153, 238, 255, 1) 100%
-  );
 `;
 
 const House = styled.div`
@@ -58,16 +52,19 @@ const LayerTopContainer = styled.div`
   width: 110%;
   height: 100%;
 
+  max-width: 960px;
+
   position: absolute;
 
   // そのうち困りそう
-  margin-left: -5%;
+  margin-left: -32px;
   pointer-events: none;
-  z-index: 1;
 `;
 
 const SceneryContainer = styled.div`
   position: absolute;
+  width: 100%;
+  height: 100%;
 
   pointer-events: none;
 `;

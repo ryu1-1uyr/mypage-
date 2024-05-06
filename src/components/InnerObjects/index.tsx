@@ -12,19 +12,20 @@ export function InnerObjects() {
         <HangingSignboard text={"看板2"} />
         <HangingSignboard text={"看板3"} />
       </SignboardContainer>
-
       <BeneathObject>
         <GroundSignboard text={"地面につくタイプの看板"} />
         <div />
         <OtherObject />
       </BeneathObject>
+      {/* 地面の代わり */}
+      <div />
     </Container>
   );
 }
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 56px auto auto;
+  grid-template-rows: 56px auto auto 32px;
 
   width: 100%;
   height: 100%;
@@ -42,5 +43,5 @@ const SignboardContainer = styled.div`
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 64px;
+  gap: 40px;
 `;

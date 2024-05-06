@@ -9,8 +9,9 @@ export function HangingSignboard({ text }: { text: string }) {
       <Chains color="#757575" chainType="horizontal" />
       <Chains color="#757575" chainType="vertical" />
       <BoardContainer>
-        <BoardDetail />
-        <Board>{text}</Board>
+        <BoardDetail>
+          <Board>{text}</Board>
+        </BoardDetail>
       </BoardContainer>
     </Signboard>
   );
@@ -27,7 +28,7 @@ const BoardContainer = styled.div`
   background-color: #af7c5a;
 
   max-height: 104px;
-  width: 100%;
+  width: 74%;
 
   position: relative;
 
@@ -37,13 +38,19 @@ const BoardContainer = styled.div`
     inset 0px 0px 24px -2px #4e372a;
 `;
 
-const Board = styled.div``;
+const Board = styled.div`
+  text-align: center;
+`;
 
 const BoardDetail = styled.div`
   position: absolute;
 
   width: 100%;
   height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 type ChainType = "vertical" | "horizontal";
