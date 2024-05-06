@@ -3,15 +3,48 @@ import styled from "styled-components";
 export function HangingSignboard({ text }: { text: string }) {
   return (
     <Signboard>
-      <Chains color="#2f2f2f" chainType="vertical" />
-      <Chains color="#2f2f2f" chainType="horizontal" />
-      <Chains color="#2f2f2f" chainType="vertical" />
-      <Chains color="#2f2f2f" chainType="horizontal" />
-      <Chains color="#2f2f2f" chainType="vertical" />
-      <Board>{text}</Board>
+      <Chains color="#757575" chainType="vertical" />
+      <Chains color="#757575" chainType="horizontal" />
+      <Chains color="#757575" chainType="vertical" />
+      <Chains color="#757575" chainType="horizontal" />
+      <Chains color="#757575" chainType="vertical" />
+      <BoardContainer>
+        <BoardDetail />
+        <Board>{text}</Board>
+      </BoardContainer>
     </Signboard>
   );
 }
+
+const Signboard = styled.div`
+  display: grid;
+  justify-items: center;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr;
+`;
+
+const BoardContainer = styled.div`
+  background-color: #af7c5a;
+
+  max-height: 104px;
+  width: 100%;
+
+  position: relative;
+
+  border-radius: 8px;
+
+  box-shadow: 4px -4px 4px 2px #4e372a, 6px 2px 8px 2px #363636,
+    inset 0px 0px 24px -2px #4e372a;
+`;
+
+const Board = styled.div``;
+
+const BoardDetail = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+`;
 
 type ChainType = "vertical" | "horizontal";
 
@@ -33,6 +66,7 @@ const Chain = styled.div<{ color: string }>`
   width: 8px;
 
   border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px #363636;
 `;
 
 const ChainWaku = styled.div<{ color: string }>`
@@ -45,6 +79,7 @@ const ChainWaku = styled.div<{ color: string }>`
   align-items: center;
 
   border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px #363636;
 `;
 
 const Nakanuki = styled.div`
@@ -54,18 +89,6 @@ const Nakanuki = styled.div`
   height: 70%;
 
   border-radius: 6px;
-`;
 
-const Signboard = styled.div`
-  display: grid;
-  justify-items: center;
-
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 3fr;
-`;
-
-const Board = styled.div`
-  background-color: #7d553b;
-
-  max-height: 104px;
-  width: 100%;
+  box-shadow: inset 3px 1px 4px 1px #8d8d8d;
 `;

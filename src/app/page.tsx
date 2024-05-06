@@ -34,9 +34,14 @@ const LayerTopContainer = styled.div`
   height: 100%;
 
   position: absolute;
+
+  // そのうち困りそう
+  pointer-events: none;
 `;
 
 const SceneryContainer = styled.div`
   position: absolute;
   z-index: -1;
+
+  pointer-events: none;
 `;
