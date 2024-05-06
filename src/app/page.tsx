@@ -16,7 +16,7 @@ export default function Home() {
         <LayerTopContainer>
           <LayerTop />
         </LayerTopContainer>
-        <InnerObjects></InnerObjects>
+        <InnerObjects />
       </House>
     </main>
   );

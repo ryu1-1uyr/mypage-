@@ -38,8 +38,6 @@ const BeneathObject = styled.div`
 `;
 
 const SignboardContainer = styled.div`
-  background-color: #8dd0b2;
-
   width: 100%;
   height: 100%;
 
