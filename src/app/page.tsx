@@ -1,29 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./page.module.css";
 import styled from "styled-components";
 import { LayerTop } from "@/components/LayerTop/";
 import { InnerObjects } from "@/components/InnerObjects";
+import { Scenery } from "@/components/Scenery";
 
 export default function Home() {
   return (
     <main>
       <House>
+        <SceneryContainer>
+          <Scenery />
+        </SceneryContainer>
         <LayerTopContainer>
           <LayerTop />
         </LayerTopContainer>
         <InnerObjects></InnerObjects>
-        <div>背景</div>
       </House>
     </main>
   );
 }
 
 const House = styled.div`
-  // 仮で色置いておく
-  background-color: #f7f7f2;
-
   width: 800px;
   height: 600px;
 
@@ -35,4 +34,9 @@ const LayerTopContainer = styled.div`
   height: 100%;
 
   position: absolute;
+`;
+
+const SceneryContainer = styled.div`
+  position: absolute;
+  z-index: -1;
 `;
