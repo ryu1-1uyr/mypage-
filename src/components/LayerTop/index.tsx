@@ -18,7 +18,10 @@ const LayerElement = styled.div`
   position: relative;
 
   width: 100%;
-  height: 100%;
+  max-width: 960px;
+
+  // 要調整
+  height: 90%;
 `;
 
 const RooftopLeft = styled.div`
@@ -32,7 +35,9 @@ const RooftopRight = styled.div`
 `;
 
 const Rooftop = styled.div`
-  background-color: #f38484;
+  background-color: #ffe7e7;
+
+  box-shadow: 0 16px 8px -10px #d48888, inset 0px 16px 8px 4px #fffafa;
 
   width: 100%;
   height: 56px;

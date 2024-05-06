@@ -6,7 +6,7 @@ export function Scenery() {
       <BGContainer>
         <img
           src={
-            "https://min-chi.material.jp/mc/materials/background-c/railroad_crossing/_railroad_crossing_1.jpg"
+            "https://thumb.ac-illust.com/6c/6c04175de4297fbf49921a487dc1a2f6_t.jpeg"
           }
           width={800}
           height={600}
@@ -27,5 +27,5 @@ const BGContainer = styled.div`
   height: 100%;
 
   overflow: hidden;
-  opacity: 0.3;
+  opacity: 0.4;
 `;

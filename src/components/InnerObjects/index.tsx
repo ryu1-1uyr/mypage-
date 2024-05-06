@@ -18,14 +18,13 @@ export function InnerObjects() {
         <div />
         <OtherObject />
       </BeneathObject>
-      <div></div>
     </Container>
   );
 }
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 56px auto auto 32px;
+  grid-template-rows: 56px auto auto;
 
   width: 100%;
   height: 100%;

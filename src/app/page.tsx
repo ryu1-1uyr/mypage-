@@ -8,7 +8,7 @@ import { Scenery } from "@/components/Scenery";
 
 export default function Home() {
   return (
-    <main>
+    <StyledMain>
       <House>
         <SceneryContainer>
           <Scenery />
@@ -16,14 +16,38 @@ export default function Home() {
         <LayerTopContainer>
           <LayerTop />
         </LayerTopContainer>
-        <InnerObjects />
+        <InnerObjectsContainer>
+          <InnerObjects />
+        </InnerObjectsContainer>
       </House>
-    </main>
+    </StyledMain>
   );
 }
 
+const InnerObjectsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+`;
+
+const StyledMain = styled.main`
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  background: rgb(219, 217, 252);
+  background: linear-gradient(
+    36deg,
+    rgba(219, 217, 252, 1) 0%,
+    rgba(255, 218, 255, 1) 26%,
+    rgba(153, 238, 255, 1) 100%
+  );
+`;
+
 const House = styled.div`
-  margin: 100px;
+  padding: 100px 100px 0 100px;
   width: 800px;
   height: 600px;
 
@@ -39,11 +63,11 @@ const LayerTopContainer = styled.div`
   // そのうち困りそう
   margin-left: -5%;
   pointer-events: none;
+  z-index: 1;
 `;
 
 const SceneryContainer = styled.div`
   position: absolute;
-  z-index: -1;
 
   pointer-events: none;
 `;
