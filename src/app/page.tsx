@@ -1,95 +1,69 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import styled from "styled-components";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main>
+      <House>
+        <LayerTop>
+          <LayerElement>
+            <Rooftop />
+            <Floor />
+          </LayerElement>
+        </LayerTop>
+        <div>ぶらさがってるやつとか看板</div>
+        <div>背景</div>
+      </House>
     </main>
   );
 }
+
+const House = styled.div`
+  // 仮で色置いておく
+  background-color: #f7f7f2;
+
+  width: 800px;
+  height: 600px;
+
+  position: relative;
+`;
+
+const LayerTop = styled.div`
+  background-color: #ffe7e7;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+`;
+
+// ここからコンポーネント分けたい
+const LayerElement = styled.div`
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+`;
+
+const Rooftop = styled.div`
+  background-color: #f38484;
+
+  width: 100%;
+  height: 64px;
+
+  position: absolute;
+  top: 0px;
+`;
+
+const Floor = styled.div`
+  background-color: #724a4a;
+
+  width: 100%;
+  height: 40px;
+
+  position: absolute;
+  bottom: 0px;
+`;
