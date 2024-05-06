@@ -23,6 +23,7 @@ export default function Home() {
 }
 
 const House = styled.div`
+  margin: 100px;
   width: 800px;
   height: 600px;
 
@@ -30,12 +31,13 @@ const House = styled.div`
 `;
 
 const LayerTopContainer = styled.div`
-  width: 100%;
+  width: 110%;
   height: 100%;
 
   position: absolute;
 
   // そのうち困りそう
+  margin-left: -5%;
   pointer-events: none;
 `;
 
