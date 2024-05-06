@@ -42,13 +42,13 @@ const RooftopRight = styled.div`
 const Rooftop = styled.div`
   background-color: #ffe7e7;
 
-  box-shadow: 0 16px 8px -10px #d48888, inset 0px 16px 8px 4px #fffafa;
+  box-shadow: 0 16px 8px -10px #d48888, inset 0px 16px 14px -8px #ffc9c9;
 
   width: 100%;
   height: 80px;
 
   display: grid;
-  grid-template-columns: 32px auto 32px;
+  grid-template-columns: 40px auto 40px;
 
   position: absolute;
   top: 0px;
@@ -78,7 +78,7 @@ const Okuyuki = styled.div`
   grid-template-columns: 32px auto 32px;
 
   background-color: #b4a194;
-  box-shadow: 0px 0px 2px 2px #fff;
+  box-shadow: 0px 0px 2px 2px #fff, inset 0px 16px 24px 8px #8a7262;
 `;
 
 const OkuyukiLeft = styled.div`
