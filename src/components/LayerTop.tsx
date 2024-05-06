@@ -1,5 +1,4 @@
 "use client";
-
 import styled from "styled-components";
 
 export function LayerTop() {
@@ -22,7 +21,7 @@ const Rooftop = styled.div`
   background-color: #f38484;
 
   width: 100%;
-  height: 64px;
+  height: 56px;
 
   position: absolute;
   top: 0px;
@@ -32,7 +31,7 @@ const Floor = styled.div`
   background-color: #724a4a;
 
   width: 100%;
-  height: 40px;
+  height: 32px;
 
   position: absolute;
   bottom: 0px;
