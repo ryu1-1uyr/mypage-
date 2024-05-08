@@ -65,7 +65,7 @@ const Floor = styled.div`
 `;
 
 const Dodai = styled.div`
-  background-color: #b4a194;
+  background-color: #8a7262;
   box-shadow: 0px 0px 2px 2px #fff;
 
   height: 32px;
@@ -78,7 +78,7 @@ const Okuyuki = styled.div`
   grid-template-columns: 32px auto 32px;
 
   background-color: #b4a194;
-  box-shadow: 0px 0px 2px 2px #fff, inset 0px 16px 24px 8px #8a7262;
+  box-shadow: 0px 0px 2px 2px #fff, inset 0px -28px 24px 8px #8a7262;
 `;
 
 const OkuyukiLeft = styled.div`
