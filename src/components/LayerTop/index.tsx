@@ -1,5 +1,6 @@
 "use client";
 import styled from "styled-components";
+import css from "styled-jsx/css";
 
 export function LayerTop() {
   return (
@@ -17,9 +18,31 @@ export function LayerTop() {
         </Okuyuki>
         <Dodai></Dodai>
       </Floor>
+      <Hashira pillarPosition={"left"} />
+      <Hashira pillarPosition={"right"} />
     </LayerElement>
   );
 }
+const Hashira = styled.div<{ pillarPosition: "left" | "right" }>`
+  position: absolute;
+
+  height: 100%;
+  width: 16px;
+
+  background: rgb(231, 176, 140);
+  background: linear-gradient(0deg, #8a7262 0%, #e7b08c 100%);
+
+  ${({ pillarPosition }) =>
+    pillarPosition === "left"
+      ? css`
+          left: 0;
+          box-shadow: 0 2px 4px 2px #fff, 8px 2px 4px -4px #111;
+        `
+      : css`
+          right: 0;
+          box-shadow: 0 2px 4px 2px #fff, -8px 2px 4px -4px #111;
+        `}
+`;
 
 const LayerElement = styled.div`
   position: relative;
