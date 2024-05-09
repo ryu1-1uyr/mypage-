@@ -85,7 +85,9 @@ const OkuyukiLeft = styled.div`
   background: #fff;
   clip-path: polygon(100% 0, 0 100%, 0 0);
 `;
+
 const OkuyukiCenter = styled.div``;
+
 const OkuyukiRight = styled.div`
   background: #fff;
   clip-path: polygon(100% 0, 100% 100%, 0 0);
