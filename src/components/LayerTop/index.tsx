@@ -69,6 +69,8 @@ const Dodai = styled.div`
   box-shadow: 0px 0px 2px 2px #fff;
 
   height: 32px;
+
+  border-radius: 4px;
 `;
 
 const Okuyuki = styled.div`
@@ -79,16 +81,20 @@ const Okuyuki = styled.div`
 
   background-color: #b4a194;
   box-shadow: 0px 0px 2px 2px #fff, inset 0px -28px 24px 8px #8a7262;
+
+  border-radius: 8px;
 `;
 
 const OkuyukiLeft = styled.div`
   background: #fff;
-  clip-path: polygon(100% 0, 0 100%, 0 0);
+  clip-path: polygon(100% -4%, 0 100%, 0 0%);
+  border-radius: 2px;
 `;
 
 const OkuyukiCenter = styled.div``;
 
 const OkuyukiRight = styled.div`
   background: #fff;
-  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  clip-path: polygon(100% 0%, 100% 100%, 4% 0%);
+  border-radius: 2px;
 `;

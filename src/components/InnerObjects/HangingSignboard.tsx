@@ -34,7 +34,7 @@ const BoardContainer = styled.div`
 
   border-radius: 8px;
 
-  box-shadow: 4px -4px 4px 2px #4e372a, 6px 2px 8px 2px #363636,
+  box-shadow: 4px -4px 4px 2px #4e372a, 4px 2px 4px 0px #363636,
     inset 0px 0px 24px -2px #4e372a;
 `;
 
