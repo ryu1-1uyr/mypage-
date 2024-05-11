@@ -8,9 +8,11 @@ export function InnerObjects() {
     <Container>
       <div></div>
       <SignboardContainer>
+        <div />
         <HangingSignboard text={"看板1"} />
         <HangingSignboard text={"看板2"} />
         <HangingSignboard text={"看板3"} />
+        <div />
       </SignboardContainer>
       <BeneathObject>
         <GroundSignboard text={"地面につくタイプの看板"} />
@@ -42,6 +44,6 @@ const SignboardContainer = styled.div`
   height: 100%;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 16px 1fr 1fr 1fr 16px;
   gap: 40px;
 `;

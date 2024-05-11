@@ -68,7 +68,7 @@ const Rooftop = styled.div`
   box-shadow: 0 16px 8px -10px #d48888, inset 0px 16px 14px -8px #ffc9c9;
 
   width: 100%;
-  height: 80px;
+  height: 88px;
 
   display: grid;
   grid-template-columns: 40px auto 40px;

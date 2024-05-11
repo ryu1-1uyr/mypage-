@@ -19,14 +19,6 @@ export function Scenery() {
 }
 
 const DummyBG = styled.div`
-  /* background: rgb(219, 217, 252);
-  background: linear-gradient(
-    36deg,
-    rgba(219, 217, 252, 1) 0%,
-    rgba(255, 218, 255, 1) 26%,
-    rgba(153, 238, 255, 1) 100%
-  ); */
-
   background: rgb(255, 181, 216);
   background: linear-gradient(
     0deg,
